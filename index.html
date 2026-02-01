@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>َشرکت پنداریار پایدار</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- ========================= CSS here ========================= -->
+  <link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.003/Vazirmatn-font-face.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css" />
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css" />
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    body {
+      font-family: 'Vizimaten', sans-serif;
+    }
+
+    .contact-page-form {
+      display: inline-block;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .contact-page-map {
+      margin-top: 36px;
+    }
+
+    .contact-page-form form {
+      padding: 20px 15px 0;
+    }
+
+    .container-counter {
+      margin-top: 100px
+    }
+
+    .counter-box {
+      display: block;
+      background: #f6f6f6;
+      padding: 40px 20px 37px;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    .counter-box p {
+      margin: 5px 0 0;
+      padding: 0;
+      color: #909090;
+      font-size: 18px;
+      font-weight: 500
+    }
+
+    .counter-box i {
+      font-size: 60px;
+      margin: 0 0 15px;
+      color: #d2d2d2
+    }
+
+    .counter {
+      display: block;
+      font-size: 32px;
+      font-weight: 700;
+      color: #666;
+      line-height: 28px
+    }
+
+    .counter-box.colored {
+      background: #2F80ED
+    }
+
+    .counter-box.colored p,
+    .counter-box.colored i,
+    .counter-box.colored .counter {
+      color: #fff
+    }
+
+
+    /* our partner company */
+
+
+    .container-clients {
+      overflow: hidden;
+
+      .slider {
+        animation: slidein 30s linear infinite;
+        white-space: nowrap;
+
+        .logos {
+          width: 100%;
+          display: inline-block;
+          margin: 0px 0;
+
+          .fab {
+            width: calc(100% / 5);
+            animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+          }
+        }
+      }
+    }
+
+    @keyframes slidein {
+      from {
+        transform: translate3d(0, 0, 0);
+      }
+
+      to {
+        transform: translate3d(-100%, 0, 0);
+      }
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+
+    /* faq */
+    .faq {
+      padding: 120px 0 90px;
+      background: #f7fbff;
+      min-height: 100vh;
+      direction: rtl;
+      text-align: right;
+    }
+
+    .faq .section-title {
+      margin-bottom: 54px;
+    }
+
+    .faq .section-title h2 {
+      margin-bottom: 22px;
+    }
+
+    .faq .accordion .card {
+      border: none;
+      margin-bottom: 30px;
+    }
+
+    .faq .accordion .card:not(:first-of-type) .card-header:first-child {
+      border-radius: 10px;
+    }
+
+    .faq .accordion .card .card-header {
+      border: none;
+      border-radius: 10px;
+      padding: 0;
+    }
+
+    .faq .accordion .card .card-header h5 {
+      padding: 0;
+    }
+
+    .faq .accordion .card .card-header h5 button {
+      color: #1e3056;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 0 30px 0 70px;
+      height: 80px;
+      display: block;
+      width: 100%;
+      color: rgba(30, 48, 86, 0.8);
+      text-align: left;
+      background: #fff;
+      -webkit-box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
+      box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
+      border-radius: 10px 10px 0 0;
+      position: relative;
+    }
+
+    .faq .accordion .card .card-header h5 button:after {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      margin-top: -10px;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      color: #ff5f74;
+      text-align: center;
+      border: 1px solid #ff5f74;
+      border-radius: 50%;
+      line-height: 100%;
+      content: '\f067';
+      font-size: 10px;
+      line-height: 18px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+    }
+
+    .faq .accordion .card .card-header h5 button.collapsed {
+      background: #fff;
+      border-radius: 10px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: 1px solid rgba(97, 125, 255, 0.2);
+    }
+
+    .faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
+      content: '\f068';
+      color: #fff;
+      background-image: -webkit-linear-gradient(-180deg, #5e7eff 0%, #ff5f74 30%, #a85fff 100%);
+    }
+
+    .faq .accordion .card .card-body {
+      -webkit-box-shadow: 0px 15px 140px 0px rgba(69, 81, 100, 0.1);
+      box-shadow: 0px 15px 140px 0px rgba(69, 81, 100, 0.1);
+      border-radius: 0 0 10px 10px;
+      padding-top: 0;
+      margin-top: -6px;
+      padding-left: 72px;
+      padding-right: 70px;
+      padding-bottom: 23px;
+      color: rgba(30, 48, 86, 0.8);
+      line-height: 30px;
+    }
+
+
+
+    /* RTL form inputs */
+    .contact-form-wrapper,
+    .contact-form-wrapper form {
+      direction: rtl;
+    }
+
+    .contact-form-wrapper .form-input {
+      direction: rtl;
+      text-align: right;
+      padding-right: 49px;
+      padding-left: 15px;
+    }
+
+    .contact-form-wrapper .form-input::placeholder {
+      text-align: right;
+    }
+
+    .contact-form-wrapper .single-input i {
+      right: 15px;
+      left: auto;
+    }
+
+    .contact-form-wrapper textarea.form-input {
+      padding-top: 12px;
+    }
+
+    .contact-form-wrapper .form-button {
+      text-align: right;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <!-- ========================= preloader start ========================= -->
+  <div class="preloader">
+    <div class="loader">
+      <div class="spinner">
+        <div class="spinner-container">
+          <div class="spinner-rotator">
+            <div class="spinner-left">
+              <div class="spinner-circle"></div>
+            </div>
+            <div class="spinner-right">
+              <div class="spinner-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ========================= preloader end ========================= -->
+
+  <!-- ========================= hero-section-wrapper-5 start ========================= -->
+  <section id="home" class="hero-section-wrapper-5">
+
+    <!-- ========================= header-6 start ========================= -->
+    <header class="header header-6">
+      <div class="navbar-area">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                  <img src="assets/img/logo/logoo.png" alt="" width="80" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent6"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent6">
+                  <ul id="nav6" class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#about">درباره ما </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#contact">تماس با ما</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#pricing"> بلاگ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#feature">خدمات</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll active" href="#home">صفحه اصلی</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- navbar collapse -->
+              </nav>
+              <!-- navbar -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- navbar area -->
+    </header>
+    <!-- ========================= header-6 end ========================= -->
+
+    <!-- ========================= hero-5 start ========================= -->
+    <div class="hero-section hero-style-5 img-bg" style="background-image: url('assets/img/hero/hero-5/hero-bg.svg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="hero-content-wrapper">
+              <h3 class="mb-30 wow fadeInUp" data-wow-delay=".2s">
+                رشد فروش، با راهکارهای اجرایی
+              </h3>
+              <p class="mb-30 wow fadeInUp w-75 text-center" data-wow-delay=".4s">
+                از تحلیل و استراتژی تا اجرا و کنترل نتیجه، کنار شما هستیم تا فروش را قابل اندازه‌گیری کنیم؛ نه شعاری.
+              </p>
+
+              <a href="#contact" class="button button-lg radius-50 wow fadeInUp" data-wow-delay=".6s">
+                درخواست جلسه مشاوره <i class="lni lni-chevron-right"></i>
+              </a>
+
+            </div>
+          </div>
+          <div class="col-lg-6 align-self-end">
+            <div class="hero-image wow fadeInUp" data-wow-delay=".5s">
+              <img src="assets/img/hero/hero-5/hero-img.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================= hero-5 end ========================= -->
+
+  </section>
+  <!-- ========================= hero-section-wrapper-6 end ========================= -->
+
+  <!-- ========================= feature style-5 start ========================= -->
+  <section id="feature" class="feature-section feature-style-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-5 col-xl-5 col-lg-7 col-md-8">
+          <div class="section-title text-center mb-60">
+            <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">
+              حوزه‌های تخصصی پنداریار
+            </h3>
+            <p class="wow fadeInUp" data-wow-delay=".4s">
+              ما به‌جای ارائه نسخه‌های عمومی، راهکارهای اجرایی متناسب با ساختار واقعی هر کسب‌وکار طراحی می‌کنیم.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+            <div class="icon">
+              <i class="lni lni-vector"></i>
+              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                  fill="#EBF4FF" />
+              </svg>
+            </div>
+            <div class="content">
+              <h5>مشاوره فروش اجرایی</h5>
+              <p>طراحی و پیاده‌سازی سیستم فروش متناسب با بازار</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+            <div class="icon">
+              <i class="lni lni-pallet"></i>
+              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                  fill="#EBF4FF" />
+              </svg>
+            </div>
+            <div class="content">
+              <h5>استراتژی بازاریابی</h5>
+              <p>تصمیم‌گیری مبتنی بر داده، نه حدس و تجربه شخصی.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+            <div class="icon">
+              <i class="lni lni-stats-up"></i>
+              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                  fill="#EBF4FF" />
+              </svg>
+            </div>
+            <div class="content">
+              <h5>طراحی فرآیند فروش</h5>
+              <p>استانداردسازی مسیر فروش از جذب تا بستن قرارداد.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+            <div class="icon">
+              <i class="lni lni-code-alt"></i>
+              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                  fill="#EBF4FF" />
+              </svg>
+            </div>
+            <div class="content">
+              <h5>کنترل و پایش عملکرد</h5>
+              <p>اندازه‌گیری KPIها و بهینه‌سازی مستمر تیم فروش</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+            <div class="icon">
+              <i class="lni lni-lock"></i>
+              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                  fill="#EBF4FF" />
+              </svg>
+            </div>
+            <div class="content">
+              <h5>آموزش مدیران و تیم فروش</h5>
+              <p>انتقال تجربه مدیران ارشد به تیم‌های اجرایی</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+            <div class="icon">
+              <i class="lni lni-code"></i>
+              <svg width="110" height="72" viewBox="0 0 110 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M110 54.7589C110 85.0014 85.3757 66.2583 55 66.2583C24.6243 66.2583 0 85.0014 0 54.7589C0 24.5164 24.6243 0 55 0C85.3757 0 110 24.5164 110 54.7589Z"
+                  fill="#EBF4FF" />
+              </svg>
+            </div>
+            <div class="content">
+              <h5>تحلیل بازار و داده</h5>
+              <p>تصمیم‌گیری مبتنی بر داده، نه حدس و تجربه شخصی.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ========================= feature style-5 end ========================= -->
+  <!-- ========================= about style-4 start ========================= -->
+  <section id="about" class="about-section about-style-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-5 col-lg-6">
+          <div class="about-content-wrapper">
+            <div class="section-title mb-30">
+              <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                از استراتژی تا اجرا، در کنار شما
+              </h3>
+              <p class="wow fadeInUp text-center" data-wow-delay=".3s">
+                پنداریار پایدار با همراهی مدیران و مشاوران ارشد فروش و بازاریابی، راهکارهایی عملی برای رشد واقعی
+                کسب‌وکارها ارائه می‌دهد.
+              </p>
+
+            </div>
+
+            <a href="#contact" class="button button-lg radius-10 wow fadeInUp">
+              شروع همکاری
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-6">
+          <div class="about-image text-lg-right wow fadeInUp" data-wow-delay=".5s">
+            <img src="assets/img/about/about-4/about-img.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========================= about style-4 end ========================= -->
+  <!-- ========================= faq ========================= -->
+  <section class="faq py-5 padding">
+    <div class="container">
+
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <div class="section-title">
+            <h4>سؤالات متداول</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- ستون چپ -->
+        <div class="col-lg-6">
+          <div class="accordion" id="faqLeft">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq1">
+                  لورم ایپسوم چیست؟
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                <div class="accordion-body">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+                  این متن از کجا آمده است؟
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                <div class="accordion-body">
+                  برخلاف تصور عموم، لورم ایپسوم یک متن تصادفی نیست و ریشه در ادبیات کلاسیک لاتین دارد.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+                  چرا از لورم ایپسوم استفاده می‌کنیم؟
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                <div class="accordion-body">
+                  استفاده از لورم ایپسوم باعث می‌شود تمرکز بیننده بر طراحی و ساختار صفحه باقی بماند.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq4">
+                  لورم ایپسوم چه کاربردی دارد؟
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                <div class="accordion-body">
+                  از این متن برای پر کردن موقت فضاهای خالی در طراحی سایت و رابط کاربری استفاده می‌شود.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ستون راست -->
+        <div class="col-lg-6">
+          <div class="accordion" id="faqRight">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq5">
+                  لورم ایپسوم چه ویژگی‌هایی دارد؟
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                <div class="accordion-body">
+                  این متن دارای توزیع نسبتاً یکنواخت حروف بوده و ظاهری طبیعی مشابه متن واقعی دارد.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq6">
+                  آیا لورم ایپسوم برای سئو مناسب است؟
+                </button>
+              </h2>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                <div class="accordion-body">
+                  خیر، این متن صرفاً برای طراحی استفاده می‌شود و باید قبل از انتشار با محتوای واقعی جایگزین شود.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq7">
+                  آیا می‌توان از لورم ایپسوم در پروژه نهایی استفاده کرد؟
+                </button>
+              </h2>
+              <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                <div class="accordion-body">
+                  استفاده از این متن در نسخه نهایی توصیه نمی‌شود و بهتر است با محتوای واقعی جایگزین گردد.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq8">
+                  چگونه متن مناسب جایگزین کنیم؟
+                </button>
+              </h2>
+              <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                <div class="accordion-body">
+                  با تولید محتوای مرتبط و هدفمند می‌توان تجربه کاربری و اعتبار سایت را افزایش داد.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================= faq========================= -->
+
+
+  <!-- ========================= counter ========================= -->
+  <div class="container  container-counter">
+    <div class="row">
+      <div class="four col-md-3">
+        <div class="counter-box colored"> <i class="fa fa-thumbs-o-up"></i> <span class="counter">214</span>
+          <p>تعداد مشتریان</p>
+        </div>
+      </div>
+      <div class="four col-md-3">
+        <div class="counter-box"> <i class="fa fa-group"></i> <span class="counter">325</span>
+          <p>کمپین‌های فعال</p>
+        </div>
+      </div>
+      <div class="four col-md-3">
+        <div class="counter-box"> <i class="fa fa-shopping-cart"></i> <span class="counter">289</span>
+          <p>تعاملات کاربران</p>
+        </div>
+      </div>
+      <div class="four col-md-3">
+        <div class="counter-box"> <i class="fa fa-user"></i> <span class="counter">1563</span>
+          <p>تعداد قراردادها</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ========================= counter ========================= -->
+  <!-- ========================= contact-style-3 start ========================= -->
+  <section id="contact" class="contact-section contact-style-3 my-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-5 col-xl-5 col-lg-7 col-md-10">
+          <div class="section-title text-center mb-50">
+            <h3 class="mb-15">در تماس باشید</h3>
+            <p>
+              برای دریافت مشاوره تخصصی فروش و بازاریابی، فرم زیر را تکمیل کنید
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="contact-form-wrapper">
+            <form action="" method="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="single-input">
+                    <input type="text" id="name" name="name" class="form-input" placeholder="نام">
+                    <i class="lni lni-user"></i>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="ایمیل">
+                    <i class="lni lni-envelope"></i>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input">
+                    <input type="text" id="number" name="number" class="form-input" placeholder="شماره نلفن">
+                    <i class="lni lni-phone"></i>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="single-input">
+                    <input type="text" id="subject" name="subject" class="form-input" placeholder="موضوع">
+                    <i class="lni lni-text-format"></i>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="single-input">
+                    <textarea name="message" id="message" class="form-input" placeholder="متن" rows="6"></textarea>
+                    <i class="lni lni-comments-alt"></i>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-button">
+                    <button type="submit" class="button"> ارسال</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4">
+          <div class="left-wrapper">
+            <div class="row">
+              <div class="col-lg-12 col-md-6">
+                <div class="single-item">
+                  <div class="icon">
+                    <i class="lni lni-phone"></i>
+                  </div>
+                  <div class="text">
+                    <p>021-88640350
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-6">
+                <div class="single-item">
+                  <div class="icon">
+                    <i class="lni lni-envelope"></i>
+                  </div>
+                  <div class="text">
+                    <p>info@pendaryar.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-6">
+                <div class="single-item">
+                  <div class="icon">
+                    <i class="lni lni-map-marker"></i>
+                  </div>
+                  <div class="text">
+                    <p>تهران، خیابان نلسون ماندلا، خیابان دستگردی، پلاک 265
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="contact-page-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="contact-page-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.999999!2d51.419362!3d35.768438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00xxxxxxxxxx!2sCompany+Name!5e0!3m2!1sen!2sin!4v1689999999999"
+              width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= contact-style-3 end ========================= -->
+
+
+  <!-- ========================= clients-logo start ========================= -->
+
+
+  <div class="container container-clients h-100 my-5">
+    <div class="row align-items-center h-100">
+      <div class="container rounded">
+        <h4 class="text-center">برخی مشتریان ما</h4>
+        <div class="slider">
+          <div class="logos">
+            <img src="assets/img/clients/limome.png" alt="" class="">
+            <img src="assets/img/clients/taamasrar.png" alt="" class="">
+            <img src="assets/img/clients/sibdiet.png" alt="" class="">
+            <img src="assets/img/clients/sibdiet.png" alt="" class="">
+            <img src="assets/img/clients/sibdiet.png" alt="" class="">
+            <img src="assets/img/clients/mahan.png" alt="" class="">
+            <img src="assets/img/clients/sibdiet.png" alt="" class="">
+            <img src="assets/img/clients/ssrc.png" alt="" class="">
+            <img src="assets/img/clients/sibdiet.png" alt="" class="">
+            <img src="assets/img/clients/asc.png" alt="" class="">
+            <img src="assets/img/clients/sibdiet.png" alt="" class="">
+          </div>
+          <div class="logos">
+            <img src="assets/img/clients/limome.png" alt="" class="">
+            <img src="assets/img/clients/ssrc.png" alt="" class="">
+            <img src="assets/img/clients/taamasrar.png" alt="" class="">
+            <img src="assets/img/clients/sibdiet.png" alt="" class="">
+            <img src="assets/img/clients/sibdiet.png" alt="" class="">
+            <img src="assets/img/clients/mahan.png" alt="" class="">
+            <img src="assets/img/clients/sibdiet.png" alt="" class="">
+            <img src="assets/img/clients/asc.png" alt="" class="">
+            <img src="assets/img/clients/asc.png" alt="" class="">
+            <img src="assets/img/clients/sibdiet.png" alt="" class="">
+            <img src="assets/img/clients/sibdiet.png" alt="" class="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ========================= clients-logo end ========================= -->
+
+  <!-- ========================= footer style-4 start ========================= -->
+  <footer class="footer footer-style-4">
+    <div class="container-logos">
+      <div class="widget-wrapper">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
+              <div class="logo">
+                <a href="#0"> <img src="assets/img/logo/logoo.png" alt="" width="100" height="100"> </a>
+              </div>
+              <p class="desc">
+                پنداریار پایدار، همراه اجرایی کسب‌وکارها در مسیر رشد فروش و بازاریابی
+              </p>
+              <ul class="socials">
+                <li> <a href="#0"> <i class="lni lni-facebook-filled"></i> </a> </li>
+                <li> <a href="#0"> <i class="lni lni-twitter-filled"></i> </a> </li>
+                <li> <a href="#0"> <i class="lni lni-instagram-filled"></i> </a> </li>
+                <li> <a href="#0"> <i class="lni lni-linkedin-original"></i> </a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget wow fadeInUp" data-wow-delay=".3s">
+              <h6>لینک های مرتبط</h6>
+              <ul class="links">
+                <li> <a href="#0">صفحه اصلی</a> </li>
+                <li> <a href="#0">درباره ما</a> </li>
+                <li> <a href="#0">خدمات</a> </li>
+                <li> <a href="#0">نظرات</a> </li>
+                <li> <a href="#0">تماس با ما</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-widget wow fadeInUp" data-wow-delay=".4s">
+              <h6>خدمات</h6>
+              <ul class="links">
+                <li> <a href="#0">بازیابی</a> </li>
+                <li> <a href="#0">فروش</a> </li>
+                <li> <a href="#0">مارکتینگ</a> </li>
+                <li> <a href="#0">مقالات</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="footer-widget wow fadeInUp" data-wow-delay=".5s">
+              <h6>دانلود اپ</h6>
+              <ul class="download-app">
+                <li>
+                  <a href="#0">
+                    <span class="icon"><i class="lni lni-apple"></i></span>
+                    <span class="text">Download on the <b>App Store</b> </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#0">
+                    <span class="icon"><i class="lni lni-play-store"></i></span>
+                    <span class="text">GET IT ON <b>Play Store</b> </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-wrapper wow fadeInUp" data-wow-delay=".2s">
+        <p>
+          © ۱۴۰۴ — کلیه حقوق مادی و معنوی این وب‌سایت متعلق به شرکت پنداریار پایدار می‌باشد
+        </p>
+
+      </div>
+    </div>
+  </footer>
+  <!-- ========================= footer style-4 end ========================= -->
+
+  <!-- ========================= scroll-top start ========================= -->
+  <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
+  <!-- ========================= scroll-top end ========================= -->
+
+
+  <!-- ========================= JS here ========================= -->
+  <script src="assets/js/bootstrap-5.0.0-beta1.min.js"></script>
+  <script src="assets/js/tiny-slider.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+<script>
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll('.counter');
+
+    counters.forEach(counter => {
+      const target = +counter.textContent;
+      let start = 0;
+      const duration = 4000;
+      const startTime = performance.now();
+
+      function animateCounter(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const value = Math.ceil(progress * target);
+        counter.textContent = value;
+
+        if (progress < 1) {
+          requestAnimationFrame(animateCounter);
+        }
+      }
+
+      requestAnimationFrame(animateCounter);
+    });
+  });
+
+
+  window.addEventListener('load', function () {
+    const companyLocation = { lat: 35.768438, lng: 51.419362 };
+
+    const map = new google.maps.Map(document.getElementById("map-canvas"), {
+      center: companyLocation,
+      zoom: 18,
+      scrollwheel: false
+    });
+
+    const marker = new google.maps.Marker({
+      position: companyLocation,
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: "ما اینجاییم"
+    });
+
+    const infoWindow = new google.maps.InfoWindow({
+      content: "<h4>ما اینجاییم</h4>"
+    });
+
+    marker.addListener('click', function () {
+      infoWindow.open(map, marker);
+    });
+  });
+
+
+</script>
+
+</html>
