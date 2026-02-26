@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="./assets/css/animate.css" />
   <link rel="stylesheet" href="./assets/css/lindy-uikit.css" />
   <link rel="stylesheet" href="./https://cdn.lineicons.com/4.0/lineicons.css">
+  <link rel="icon" href="assets/img//logo//favicon-32x32.png">
 
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -334,6 +335,32 @@
         color: #2F80ED !important;
       }
     }
+
+    /* تیره کردن ناحیه هدر روی عکس */
+    .header-6 {
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(4px);
+    }
+
+    /* سایه ملایم برای واضح شدن لوگو */
+    .navbar-brand img {
+      filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+    }
+
+    .navbar-brand img {
+      filter: brightness(0) invert(1);
+    }
+
+    /* حالت عادی (روی عکس تیره) */
+    .navbar-brand img {
+      filter: brightness(0) invert(1);
+      transition: 0.3s ease;
+    }
+
+    /* وقتی هدر sticky شد (بک‌گراند سفید شد) */
+    .hero-section-wrapper-5 .header.sticky .navbar-brand img {
+      filter: none;
+    }
   </style>
 </head>
 
@@ -381,7 +408,7 @@
                   </a>
                 </div>
 
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent6"
                   aria-expanded="false" aria-label="Toggle navigation">
                   <span class="toggler-icon"></span>
@@ -412,7 +439,7 @@
 
                 <!-- لوگو سمت راست -->
                 <a class="navbar-brand ms-lg-3" href="index.html">
-                  <img src="assets/img/logo/logo.png" alt="" width="130" height="110">
+                  <img src="assets/img/logo/logo.png" alt="" width="160" height="120">
                 </a>
                 <!-- navbar collapse -->
               </nav>
